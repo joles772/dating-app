@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sauce_code.flirtirator" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Login"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Registration"
+            android:label="@string/title_activity_registration"
+            android:parentActivityName=".Login" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name=".ForgotPassword"
+            android:label="@string/title_activity_forgot_password"
+            android:parentActivityName=".Login" >
+        </activity>
+        <activity
+            android:name=".ChangeEmail"
+            android:label="@string/title_activity_change_email" >
+        </activity>
+        <activity
+            android:name=".ChangePassword"
+            android:label="@string/title_activity_change_password" >
+        </activity>
+        <activity
+            android:name=".Matches"
+            android:label="@string/title_activity_matches" >
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".Matches" >
+        </activity>
+        <activity
+            android:name=".ViewProfile"
+            android:label="@string/title_activity_view_profile"
+            android:parentActivityName=".Matches" >
+        </activity>
+        <activity
+            android:name=".EditProfile"
+            android:label="@string/title_activity_edit_profile"
+            android:parentActivityName=".ViewProfile" >
+        </activity>
+        <activity
+            android:name=".Chat"
+            android:label="@string/title_activity_chat"
+            android:parentActivityName=".ViewProfile" >
+        </activity>
+    </application>
+
+</manifest>
